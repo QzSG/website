@@ -1,0 +1,14 @@
+.Banner {
+    font-family: 'Source Code Pro';
+    font-weight: 100; 
+    text-align: center;
+    font-size: 10em;
+}
+
+img.circle {
+    border-radius: 50%;
+}
+img {
+    margin-top: -1.5rem;
+    border-style: none;
+}

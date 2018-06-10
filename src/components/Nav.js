@@ -1,0 +1,63 @@
+import React, { Component } from 'react';
+import { NavLink as Link } from 'react-router-dom';
+import {
+    Container,
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav as NavStrap,
+    NavItem,
+    NavLink
+} from 'reactstrap';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import faGithub from '@fortawesome/fontawesome-free-brands/faGithubAlt'
+import './../styles/Nav.css';
+
+class Nav extends Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }  
+  render() {
+    return (
+        <Navbar dark expand="md" className="flex-shrink-0">
+            <NavbarBrand tag={Link} to="/" className="d-flex w-50 mr-auto">QzSG</NavbarBrand>
+            
+            <NavbarToggler onClick={this.toggle} className={this.state.isOpen ? '': 'collapsed'}>
+              <span className="icon-bar top-bar"></span>
+	            <span className="icon-bar middle-bar"></span>
+	            <span className="icon-bar bottom-bar"></span>		
+            </NavbarToggler>
+            
+            <Collapse isOpen={this.state.isOpen} navbar className="w-100">
+              <NavStrap className="w-100 justify-content-center" navbar>
+                <NavItem>
+                  <NavLink href="https://github.com/QzSG/" className="active"><FontAwesomeIcon icon={faGithub} size="2x"/></NavLink>
+                </NavItem>
+              </NavStrap>
+              <NavStrap className="ml-auto w-100 justify-content-end" navbar>
+                <NavItem>
+                  <NavLink tag={Link} exact to="/" activeClassName="active">Home</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink tag={Link} to="/about" activeClassName="active">About</NavLink>
+                </NavItem>
+              </NavStrap>
+            </Collapse>
+        </Navbar>
+        
+      );
+  }
+}
+
+export default Nav;
