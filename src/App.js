@@ -13,7 +13,7 @@ class App extends Component {
       <Router>  
         <Container fluid className="App d-flex flex-column">
           <Nav />
-          
+            
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
 
