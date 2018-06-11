@@ -28,8 +28,8 @@ class Home extends Component {
             <CardText tag='h3' style={{ fontFamily:'Raleway'}} >Adrian Tan</CardText>
             <CardText tag='p' className="lead">Technology Ninja</CardText>
             <CardText tag='p' className="text-justify align-self-center">
-            <FontAwesomeIcon icon={faHeart} size=""/> playing with the latest technology and reading about the latest science & technology innovations.<br/>
-            Likes to read books and listen to music when bored. Turns copious amounts of <FontAwesomeIcon icon={faCoffee} size=""/> into awesome <FontAwesomeIcon icon={faCode} size=""/> !
+            <FontAwesomeIcon icon={faHeart}/> playing with the latest technology and reading about the latest science & technology innovations.<br/>
+            Likes to read books and listen to music when bored. Turns copious amounts of <FontAwesomeIcon icon={faCoffee}/> into awesome <FontAwesomeIcon icon={faCode}/> !
             </CardText>
         </Card>
       </Row>
