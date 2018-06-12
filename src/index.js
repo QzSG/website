@@ -8,7 +8,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 WebFont.load({
     google: {
-        families: ['Raleway:400,300,600','Source+Code+Pro:200,300,400,600','Source+Sans+Pro:200']
+        families: ['Raleway:400,300,600','Source+Code+Pro:200,300,400','Source+Sans+Pro:200']
     }
 });
 ReactDOM.render(<App />, document.getElementById('root'));
