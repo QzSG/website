@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import { Card, CardBody, CardText } from 'reactstrap';
 import {Helmet} from 'react-helmet';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
