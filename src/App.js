@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { Container } from 'reactstrap';
 import { Helmet } from 'react-helmet';
 //import logo from './logo.svg';
@@ -7,7 +7,7 @@ import './styles/App.css';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
-
+import FourOhFour from './components/FourOhFour';
 class App extends Component {
   render() {
     return (
@@ -19,10 +19,12 @@ class App extends Component {
           </Helmet>
 
           <Nav />
-            
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Redirect from="*" to="/" />
+          
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route component={FourOhFour} />
+          </Switch>
         </Container>
       </Router>
     );
