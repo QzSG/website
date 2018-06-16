@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import { Container } from 'reactstrap';
 import { Helmet } from 'react-helmet';
 //import logo from './logo.svg';
@@ -22,7 +22,7 @@ class App extends Component {
             
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
-
+          <Redirect from="*" to="/" />
         </Container>
       </Router>
     );
