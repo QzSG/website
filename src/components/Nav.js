@@ -51,6 +51,9 @@ class Nav extends Component {
                 <NavItem>
                   <NavLink tag={Link} to="/about" activeClassName="active">About</NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink href="https://blog.qz.sg" activeClassName="active">Blog</NavLink>
+                </NavItem>
               </NavStrap>
             </Collapse>
         </Navbar>
