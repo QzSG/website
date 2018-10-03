@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 import WebFont from 'webfontloader';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import * as serviceWorker from './serviceWorker';
 
 WebFont.load({
     google: {
@@ -12,4 +12,4 @@ WebFont.load({
     }
 });
 ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+serviceWorker.register();

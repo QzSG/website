@@ -41,18 +41,18 @@ class Nav extends Component {
             <Collapse isOpen={this.state.isOpen} navbar className="w-100">
               <NavStrap className="w-100 justify-content-center" navbar>
                 <NavItem>
-                  <NavLink href="https://github.com/QzSG/" className="active"><FontAwesomeIcon icon={faGithub} size="2x"/></NavLink>
+                  <NavLink href="https://github.com/QzSG/" active><FontAwesomeIcon icon={faGithub} size="2x"/></NavLink>
                 </NavItem>
               </NavStrap>
               <NavStrap className="ml-auto w-100 justify-content-end" navbar>
                 <NavItem>
-                  <NavLink tag={Link} exact to="/" activeClassName="active">Home</NavLink>
+                  <NavLink tag={Link} exact to="/">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} to="/about" activeClassName="active">About</NavLink>
+                  <NavLink tag={Link} to="/about">About</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://blog.qz.sg" activeClassName="active">Blog</NavLink>
+                  <NavLink href="https://blog.qz.sg" active>Blog</NavLink>
                 </NavItem>
               </NavStrap>
             </Collapse>
