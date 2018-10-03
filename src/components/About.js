@@ -21,7 +21,7 @@ class Home extends Component {
             <CardBody>
             <Row className='justify-content-center'>
               <Col xs='9' sm='8' md='6'  lg='5'>
-                <img src={avatar} className="rounded-circle img-fluid" />
+                <img src={avatar} className="rounded-circle img-fluid" alt="My avatar" />
               </Col>
             </Row>
             </CardBody>
