@@ -21,6 +21,11 @@ nav {
   background: transparent !important;
 }
 
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .navbar-toggler .top-bar {
     transform: rotate(45deg);
     transform-origin: 10% 10%;
