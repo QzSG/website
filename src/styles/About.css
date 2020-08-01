@@ -1,7 +1,7 @@
 .card {
     background: transparent;
     color: white;
-    box-shadow: inset 0 0 20px 10000px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 20px 10000px rgba(0, 0, 0, 0.4);
     border-color: #814960!important;
     /*margin-top: -5rem;*/
     font-family: 'Source Sans Pro', sans-serif;
