@@ -32,7 +32,7 @@ class Nav extends Component {
         <Navbar dark expand="md" className="flex-shrink-0">
             <NavbarBrand tag={Link} to="/" className="d-flex w-50 mr-auto">QzSG</NavbarBrand>
             
-            <NavbarToggler onClick={this.toggle} className={this.state.isOpen ? '': 'collapsed'}>
+            <NavbarToggler aria-label="Mobile Navbar Toggle" onClick={this.toggle} className={this.state.isOpen ? '': 'collapsed'}>
               <span className="icon-bar top-bar"></span>
 	            <span className="icon-bar middle-bar"></span>
 	            <span className="icon-bar bottom-bar"></span>		
