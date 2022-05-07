@@ -8,7 +8,7 @@ import * as serviceWorker from './serviceWorker';
 
 WebFont.load({
     google: {
-        families: ['Raleway:400,300,600','Source+Code+Pro:200,300,400','Source+Sans+Pro:200']
+        families: ['Raleway:400,300,600','Source+Code+Pro:200,300,400','Source+Sans+Pro:200&display=swap']
     }
 });
 const container = document.getElementById('root');
