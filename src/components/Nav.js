@@ -10,8 +10,8 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import faGithub from '@fortawesome/fontawesome-free-brands/faGithubAlt'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithubAlt } from '@fortawesome/free-brands-svg-icons'
 import './../styles/Nav.css';
 
 
@@ -43,12 +43,12 @@ class Nav extends Component {
         <Collapse isOpen={this.state.isOpen} navbar className="w-100">
           <NavStrap className="w-100 justify-content-center" navbar>
             <NavItem>
-              <NavLink href="https://github.com/QzSG/" active><FontAwesomeIcon icon={faGithub} size="2x" /></NavLink>
+              <NavLink href="https://github.com/QzSG/" active><FontAwesomeIcon icon={faGithubAlt} size="2x" /></NavLink>
             </NavItem>
           </NavStrap>
           <NavStrap className="ml-auto w-100 justify-content-end" navbar>
             <NavItem>
-              <NavLink tag={Link} exact to="/">Home</NavLink>
+              <NavLink tag={Link} to="/">Home</NavLink>
             </NavItem>
             <NavItem>
               <NavLink tag={Link} to="/about">About</NavLink>

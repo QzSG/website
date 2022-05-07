@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import { Row, Col } from 'reactstrap';
 import { Card, CardBody, CardText } from 'reactstrap';
 import {Helmet} from 'react-helmet';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faHeart from '@fortawesome/fontawesome-free-regular/faHeart';
-import {faCoffee,faCode} from '@fortawesome/fontawesome-free-solid';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import {faCoffee, faCode} from '@fortawesome/free-solid-svg-icons';
 import './../styles/About.css';
 import avatar from './../images/me.svg';
 
