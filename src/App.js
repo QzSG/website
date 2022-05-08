@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 import './styles/App.css';
 
 import Nav from './components/Nav';
-import Particles from "react-tsparticles";
+//import Particles from "react-tsparticles";
 const Home = React.lazy(() => import('./components/Home'));
 const About = React.lazy(() => import('./components/About'));
 const FourOhFour = React.lazy(() => import('./components/FourOhFour'));
