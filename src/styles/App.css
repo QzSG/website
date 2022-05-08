@@ -1,17 +1,33 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background: url('../images/bg-min.jpg') no-repeat center center;
-  background-size: cover;
+  /*background: url('../images/bg-min.jpg') no-repeat center center;
+  background-size: cover;*/
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
 }
 
+.image-full,.image-full img {
+  display: block;
+  
+  /* Absolute position the element with full width/height, and a low z-index */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  
+  /* Object-fit:cover will make the image fill the space */
+  object-fit: cover;
+  object-position: center;
+}
+/*
 #tsparticles canvas {
   position: fixed;  
   left: 0;
   max-height: 80vh;
 }
-/*
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;

@@ -6,35 +6,46 @@ import { Helmet } from 'react-helmet';
 import './styles/App.css';
 
 import Nav from './components/Nav';
+
 //import Particles from "react-tsparticles";
+
 const Home = React.lazy(() => import('./components/Home'));
 const About = React.lazy(() => import('./components/About'));
 const FourOhFour = React.lazy(() => import('./components/FourOhFour'));
+
+const desktopSrc = require("./images/bg-desktop.jpg")
+const mobileSrc = require("./images/bg-mobile.jpg")
 class App extends Component {
   render() {
     return (
+      <>
+        <picture className='image-full'>
+          <source media="(min-width:1024px)" srcSet={desktopSrc}/>
+          <source media="(min-width:300px)" srcSet={mobileSrc}/>
+          <img src={desktopSrc} alt="looking at the stars"/>
+        </picture>
+        <Router>
+          <Container fluid className="App d-flex flex-column">
+            <Helmet>
+              <title>QzSG | Home</title>
+              <meta name="description" content="Welcome to QzSG personal website!" />
+            </Helmet>
 
-      <Router>
-        <Container fluid className="App d-flex flex-column">
-          <Helmet>
-            <title>QzSG | Home</title>
-            <meta name="description" content="Welcome to QzSG personal website!" />
-          </Helmet>
+            <Nav />
+            
 
-          <Nav />
-          
+            <Suspense fallback={<div></div>}>
+              <Routes>
+                <Route exact path="/" element={ <Home />} />
+                <Route exact path="/about" element={ <About/>} />
+                <Route path="*" element={ <FourOhFour/>} />
+              </Routes>
 
-          <Suspense fallback={<div></div>}>
-            <Routes>
-              <Route exact path="/" element={ <Home />} />
-              <Route exact path="/about" element={ <About/>} />
-              <Route path="*" element={ <FourOhFour/>} />
-            </Routes>
+            </Suspense>
 
-          </Suspense>
-
-        </Container>
-      </Router>
+          </Container>
+        </Router>
+      </>
 
     );
   }
