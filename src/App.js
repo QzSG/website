@@ -13,8 +13,8 @@ const Home = React.lazy(() => import('./components/Home'));
 const About = React.lazy(() => import('./components/About'));
 const FourOhFour = React.lazy(() => import('./components/FourOhFour'));
 
-const desktopSrc = require("./images/bg-desktop.jpg")
-const mobileSrc = require("./images/bg-mobile.jpg")
+const desktopSrc = require("./images/bg-desktop.webp")
+const mobileSrc = require("./images/bg-mobile.webp")
 class App extends Component {
   render() {
     return (
