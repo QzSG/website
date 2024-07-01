@@ -20,7 +20,7 @@
     "react-transition-group": "^4.4.5",
     "react-tsparticles": "^2.12.2",
     "reactstrap": "^8.10.1",
-    "web-vitals": "^2.1.4",
+    "web-vitals": "^4.2.1",
     "webfontloader": "^1.6.28",
     "workbox-background-sync": "^6.5.3",
     "workbox-broadcast-update": "^6.5.3",
